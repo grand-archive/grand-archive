@@ -1,5 +1,12 @@
-import { Box, Center, Heading, HStack, Text, VStack } from '@chakra-ui/react'
-import Image from 'next/image'
+import {
+  Box,
+  Center,
+  Heading,
+  HStack,
+  Image,
+  Text,
+  VStack
+} from '@chakra-ui/react'
 import Link from 'next/link'
 
 const Home = () => {
@@ -24,15 +31,7 @@ const Home = () => {
         >
           <HStack justify="space-between" maxW="6xl" mx="auto">
             <Link href="/">
-              <Box w="24">
-                <Image
-                  alt="Logo"
-                  height={116}
-                  src="/logo-navbar.png"
-                  style={{ width: '100%', height: 'auto' }}
-                  width={300}
-                />
-              </Box>
+              <Image alt="Logo" src="/logo-navbar.png" w="24" />
             </Link>
           </HStack>
         </Box>
