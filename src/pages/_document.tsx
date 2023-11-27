@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Head, Html, Main, NextScript } from 'next/document'
 
 const Document = () => (
   <Html lang="en">
@@ -10,4 +10,5 @@ const Document = () => (
   </Html>
 )
 
+// eslint-disable-next-line import/no-default-export
 export default Document

@@ -1,7 +1,40 @@
 {
   "extends": ["next/core-web-vitals", "prettier"],
-  "plugins": ["prettier"],
+  "plugins": ["@typescript-eslint", "simple-import-sort", "prettier"],
   "rules": {
+    "@typescript-eslint/array-type": "error",
+    "@typescript-eslint/method-signature-style": "error",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "_.*",
+        "varsIgnorePattern": "_.*"
+      }
+    ],
+    "@typescript-eslint/prefer-for-of": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/prefer-as-const": "error",
+    "no-await-in-loop": "error",
+    "no-console": "error",
+    "no-promise-executor-return": "error",
+    "no-return-await": "error",
+    "no-case-declarations": "off",
+    "prefer-arrow-callback": "error",
+    "prefer-promise-reject-errors": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "import/order": "off",
+    "import/no-default-export": "error",
+    "react/jsx-sort-props": [
+      "error",
+      {
+        "callbacksLast": true,
+        "reservedFirst": true,
+        "shorthandFirst": true,
+        "multiline": "last"
+      }
+    ],
+    "simple-import-sort/exports": "error",
+    "simple-import-sort/imports": "error",
     "prettier/prettier": "error"
   }
 }
