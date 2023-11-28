@@ -44,7 +44,9 @@ const Home = () => {
           </Box>
 
           <Center flex="1">
-            <Heading textColor="white">Bruh</Heading>
+            <Heading textColor="white" textShadow="0 2px 3px rgba(0,0,0,.95)">
+              Start a game
+            </Heading>
           </Center>
 
           <Box
@@ -59,7 +61,12 @@ const Home = () => {
             w="100%"
           >
             <HStack justify="space-between" maxW="6xl" mx="auto">
-              <Text textColor="white">Made by Max</Text>
+              <Text fontSize="20" textColor="white">
+                Made by{' '}
+                <Link href="https://maxwowo.com" target="_blank">
+                  Max
+                </Link>
+              </Text>
             </HStack>
           </Box>
         </VStack>
