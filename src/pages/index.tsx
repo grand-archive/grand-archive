@@ -16,6 +16,7 @@ const Home = () => {
       <Head>
         <link as="image" href="/background-patterns.jpg" rel="preload" />
         <link as="image" href="/navbar-border.png" rel="preload" />
+        <link as="image" href="/logo-navbar.png" rel="preload" />
       </Head>
       <Box
         bgImage="url('/background-patterns.jpg')"
